@@ -28,13 +28,13 @@ function Home() {
           </CardHeader>
           <CardContent>
             <div className='flex pointer-events-auto flex-col items-center justify-between m-auto'>
-              <Button onClick={() => {navigate("/work")}} className='m-[5px] max-w-min text-black backdrop-blur-md bg-white/20 hover:bg-white/50'>
+              <Button onClick={() => {navigate("Portfolio/work")}} className='m-[5px] max-w-min text-black backdrop-blur-md bg-white/20 hover:bg-white/50'>
                 My Work
               </Button>
-              <Button onClick={() => {navigate("/about")}} className='m-[5px] max-w-min text-black backdrop-blur-md bg-white/20 hover:bg-white/50'>
+              <Button onClick={() => {navigate("Portfolio/about")}} className='m-[5px] max-w-min text-black backdrop-blur-md bg-white/20 hover:bg-white/50'>
                 About Me
               </Button>
-              <Button onClick={() => {navigate("/contact")}} className='m-[5px] max-w-min text-black backdrop-blur-md bg-white/20 hover:bg-white/50'>
+              <Button onClick={() => {navigate("Portfolio/contact")}} className='m-[5px] max-w-min text-black backdrop-blur-md bg-white/20 hover:bg-white/50'>
                 Contact Me
               </Button>
             </div>
