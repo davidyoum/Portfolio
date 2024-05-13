@@ -123,7 +123,7 @@ function Work() {
                             </CardContent>
                             <CardFooter>
                                 <Button>
-                                    <Link to='https://github.com/davidyoum/davidyoum.github.io' target="_blank" rel="noopener noreferrer">
+                                    <Link to='https://github.com/davidyoum/Portfolio' target="_blank" rel="noopener noreferrer">
                                         View Here
                                     </Link>
                                 </Button>  
