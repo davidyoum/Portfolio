@@ -19,7 +19,6 @@ import { Link } from 'react-router-dom'
 import {
     AlertDialog,
     AlertDialogAction,
-    AlertDialogCancel,
     AlertDialogContent,
     AlertDialogDescription,
     AlertDialogFooter,
@@ -27,14 +26,11 @@ import {
     AlertDialogTitle,
     AlertDialogTrigger,
   } from "@/components/ui/alert-dialog"
-import { useToast } from "@/components/ui/use-toast"
 
 import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
 
 function ContactMe() {
-    const { toast } = useToast()
-
     const form = useRef(null);
 
     const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
