@@ -16,11 +16,24 @@ import { Textarea } from "@/components/ui/textarea"
 import { IconContext } from "react-icons";
 import { FaInstagram, FaYoutube, FaLinkedin } from "react-icons/fa";
 import { Link } from 'react-router-dom'
+import {
+    AlertDialog,
+    AlertDialogAction,
+    AlertDialogCancel,
+    AlertDialogContent,
+    AlertDialogDescription,
+    AlertDialogFooter,
+    AlertDialogHeader,
+    AlertDialogTitle,
+    AlertDialogTrigger,
+  } from "@/components/ui/alert-dialog"
+import { useToast } from "@/components/ui/use-toast"
 
 import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
 
 function ContactMe() {
+    const { toast } = useToast()
 
     const form = useRef(null);
 
@@ -76,7 +89,23 @@ function ContactMe() {
                             <Textarea name='message' placeholder='Message Here...'/>
                         </CardContent>
                         <CardFooter className='items-center justify-center'>
-                            <Button>Send Mail</Button>
+                        <AlertDialog>
+                            <AlertDialogTrigger asChild>
+                                <Button> Send Mail </Button>
+                            </AlertDialogTrigger>
+                            <AlertDialogContent>
+                                <AlertDialogHeader>
+                                <AlertDialogTitle>You have sent me mail!</AlertDialogTitle>
+                                <AlertDialogDescription>
+                                    Thank you for reaching out to me! I will get back to you as soon as possible.
+                                </AlertDialogDescription>
+                                </AlertDialogHeader>
+                                <AlertDialogFooter>
+                                <AlertDialogAction>Continue</AlertDialogAction>
+                                </AlertDialogFooter>
+                            </AlertDialogContent>
+                        </AlertDialog>
+                        
                         </CardFooter>
                     </form>
                 </Card>
