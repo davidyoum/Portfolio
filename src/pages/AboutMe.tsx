@@ -32,7 +32,7 @@ function AboutMe() {
 
                         <div className='mt-10 relative ml-24 mr-24'>
                             Im currently a student at Penn State University studying Computer Science.
-                            My passion for programming and desgining started when I was ~12 years old when I touched Roblox and Photoshop.
+                            My passion for programming and designing started when I was ~12 years old when I touched Roblox and Photoshop.
                             Now I expand my programming languages and tools to create new and innovative projects.
                         </div>
 
