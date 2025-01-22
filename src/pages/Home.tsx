@@ -23,7 +23,7 @@ function Home() {
             <CardHeader>
               <CardTitle className='text-black'>David Youm</CardTitle>
               <CardDescription className='text-black'>
-                Full-Stack Developer | Founder of Alter AI | CS@PennState'26
+                Full-Stack Developer | Founggder of Alter AI | CS@PennState'26
               </CardDescription>
           </CardHeader>
           <CardContent>
